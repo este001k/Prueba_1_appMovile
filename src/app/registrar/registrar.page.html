@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>iniciar Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formuRegistro" (keyup.enter)="save()">
+        <ion-item>
+          <ion-label position="floating">Nombre usuario</ion-label>
+          <ion-input formControlName="usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre real</ion-label>
+          <ion-input formControlName="nombre" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input formControlName="apellido" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Rut</ion-label>
+          <ion-input formControlName="rut"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Carrera</ion-label>
+          <ion-input formControlName="carrera"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="save()">
+        Registrarse
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
