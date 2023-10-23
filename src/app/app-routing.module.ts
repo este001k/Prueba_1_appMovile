@@ -2,27 +2,26 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
   {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'forget-password',
+    loadChildren: () => import('./pages/forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
   },
   {
     path: 'registrar',
-    loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
+    loadChildren: () => import('./pages/registrar/registrar.module').then( m => m.RegistrarPageModule)
   },
   {
-    path: 'forget-password',
-    loadChildren: () => import('./forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'qr',
-    loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
+    path: 'asistencia-qr',
+    loadChildren: () => import('./pages/asistencia-qr/asistencia-qr.module').then( m => m.AsistenciaQrPageModule)
   },
 ];
 

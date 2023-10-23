@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { QrPageRoutingModule } from './qr-routing.module';
+import { AsistenciaQrPageRoutingModule } from './asistencia-qr-routing.module';
 
-import { QrPage } from './qr.page';
+import { AsistenciaQrPage } from './asistencia-qr.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    QrPageRoutingModule
+    AsistenciaQrPageRoutingModule
   ],
-  declarations: [QrPage]
+  declarations: [AsistenciaQrPage]
 })
-export class QrPageModule {}
+export class AsistenciaQrPageModule {}

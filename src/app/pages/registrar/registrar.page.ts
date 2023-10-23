@@ -48,6 +48,7 @@ export class RegistrarPage implements OnInit {
       return;
     }
     localStorage.setItem('user', JSON.stringify(guardar));
+    console.log("datos llenados");
 
   }
 
